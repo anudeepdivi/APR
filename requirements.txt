@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+python-multipart
+opencv-python
+numpy
+pandas
+scikit-learn
+ultralytics
+torch
+transformers
+huggingface-hub

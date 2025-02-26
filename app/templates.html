@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OCR Upload</title>
+</head>
+<body>
+  <h1>Upload Images for OCR</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" accept="image/*" multiple required />
+    <button type="submit">Upload</button>
+  </form>
+
+  {% if results %}
+    <h2>OCR Results:</h2>
+    <ul>
+      {% for result in results %}
+        <li>{{ result }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
