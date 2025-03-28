@@ -4,7 +4,7 @@ from fastapi.templating import Jinja2Templates
 import cv2
 import numpy as np
 from typing import List
-from app.pipeline import pipeline  # your pipeline function
+from app.pipeline import pipeline
 
 app = FastAPI()
 templates = Jinja2Templates(directory="app")
